@@ -1,0 +1,10 @@
+# 配信しないもの。assets.directory を "." にしているため、
+# ここに書かないとリポジトリの中身がそのまま公開される。
+# 実際に .git/config が誰でも読める状態で公開された（2026-09-12・即日修正）。
+.git
+.git/**
+.gitignore
+.assetsignore
+wrangler.jsonc
+.wrangler
+README.md
