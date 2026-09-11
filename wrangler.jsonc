@@ -6,6 +6,11 @@
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": ".",
+    // .html の付いた URL をそのまま 200 で返す。既定では拡張子を落とした URL へ
+    // 307 で飛ばすが、アプリ・利用規約・サポートページはすべて .html 付きを指しており、
+    // App Store Connect に登録する URL も .html 付きになる。
+    // リダイレクトを挟むと、検証がリダイレクトを追わない相手に対して弱い
+    "html_handling": "none"
   }
 }
